@@ -209,6 +209,9 @@ def load_model():
     encoder = LabelEncoder()
     df['weather'] = encoder.fit_transform(df['weather'])
 
+    # ✅ Derive temp_mean BEFORE dropping temp_min
+    df['temp_mean'] = (df['temp_max'] + df['temp_min']) / 2
+
     df = df.drop(['temp_min', 'wind'], axis=1)
 
     X = df.drop(columns=['weather'])
