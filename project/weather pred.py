@@ -241,14 +241,6 @@ WEATHER_META = {
 st.markdown("<h1>🌦 Weather Predictor </h1>", unsafe_allow_html=True)
 st.markdown("<div class='subtitle'>Machine learning powered weather prediction</div>", unsafe_allow_html=True)
 
-st.markdown("""
-<div style='margin-bottom:1.5rem'>
-    <span class='info-pill'>📍 Seattle, WA</span>
-    <span class='info-pill'>🤖 Gradient Boosting</span>
-    <span class='info-pill'>📊 Trained on Historical Data</span>
-    <span class='info-pill'>3 Features</span>
-</div>
-""", unsafe_allow_html=True)
 
 # ── INPUT SECTION ──────────────────────────────────────────────────────────────
 st.markdown("<h3>Enter Weather Conditions</h3>", unsafe_allow_html=True)
@@ -345,11 +337,3 @@ if st.button("🔍 Predict Weather"):
             </div>
         </div>
         """, unsafe_allow_html=True)
-
-# ── FOOTER ─────────────────────────────────────────────────────────────────────
-st.markdown("<hr>", unsafe_allow_html=True)
-st.markdown("""
-<div style='text-align:center; color:rgba(126,200,227,0.4); font-size:0.75rem; padding-bottom:1rem'>
-    Trained on Seattle Weather Dataset · Gradient Boosting Classifier · Features: Precipitation, Temp Max, Temp Mean
-</div>
-""", unsafe_allow_html=True)
