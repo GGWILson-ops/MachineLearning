@@ -290,7 +290,7 @@ st.markdown(f"""
 
 st.markdown("<hr>", unsafe_allow_html=True)
 
-# ── PREDICT ────────────────────────────────────────────────────────────────────
+
 if st.button("🔍 Predict Weather"):
     input_df = pd.DataFrame([[precipitation, temp_max, temp_mean]],
                             columns=['precipitation', 'temp_max', 'temp_mean'])
